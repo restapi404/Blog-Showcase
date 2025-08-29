@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with Next.js",
+    "summary": "A beginner's guide to building apps with Next.js.",
+    "author": "Jane Doe",
+    "date": "2025-08-28",
+    "image": "/nextjs.png",
+    "tags": ["Next.js", "React", "Guide"],
+    "content": "# Welcome to Next.js!\n\nThis is a **Markdown** blog post.\n\n- Easy to write\n- Easy to read\n\n```js\nconsole.log(\"Hello, Markdown!\");\n```"
+  },
+  {
+    "id": 2,
+    "title": "Showcasing Projects with TailwindCSS",
+    "summary": "How to use TailwindCSS for beautiful project showcases.",
+    "author": "John Smith",
+    "date": "2025-08-27",
+    "image": "/tailwind.png",
+    "tags": ["TailwindCSS", "Design"],
+    "content": "# TailwindCSS Project Showcase\n\nUse Tailwind to build beautiful UIs!\n\n- Utility-first\n- Responsive\n- Customizable\n\n```css\n.bg-blue-500 { background-color: #3b82f6; }\n```"
+  }
+]
