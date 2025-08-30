@@ -1,8 +1,15 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function BlogCard({ blog }) {
   return (
-    <div className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg shadow p-4 flex flex-col">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.04, boxShadow: "0 8px 32px rgba(0,0,0,0.15)" }}
+      transition={{ duration: 0.3 }}
+      className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg shadow p-4 flex flex-col cursor-pointer"
+    >
       <img
         src={blog.image}
         alt={blog.title}
@@ -22,10 +29,10 @@ export default function BlogCard({ blog }) {
       </div>
       <Link
         href={`/blog/${blog.id}`}
-        className="mt-auto text-blue-600 dark:text-blue-400 hover:underline"
+        className="mt-auto text-blue-600 dark:text-blue-400 hover:underline hover:text-blue-800 dark:hover:text-blue-200 transition"
       >
         Read More
       </Link>
-    </div>
+    </motion.div>
   );
 }

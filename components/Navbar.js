@@ -1,15 +1,30 @@
 "use client";
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-900 text-white px-6 py-4 flex justify-between items-center shadow">
-      <div className="text-2xl font-bold">
-        <Link href="/">Blog Showcase</Link>
+    <nav className="bg-[#4A0000] text-white px-6 py-4 flex flex-col md:flex-row md:justify-between md:items-center shadow">
+      <div>
+        <div className="text-2xl font-bold">
+          <Link href="/">Blog Showcase</Link>
+        </div>
+        <div className="text-[#DEA193] text-sm mt-1">
+          <Typewriter
+            words={['Discover Projects.', 'Read Amazing Blogs.', 'Showcase Your Work!']}
+            loop={0}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1200}
+          />
+        </div>
       </div>
-      <div className="space-x-4">
+      <div className="space-x-4 mt-2 md:mt-0">
         <Link href="/" className="hover:text-yellow-400 transition">Home</Link>
+        <Link href="/blogs" className="hover:text-yellow-400 transition">Blogs</Link>
         <Link href="/about" className="hover:text-yellow-400 transition">About</Link>
         <DarkModeToggle/>
       </div>
