@@ -9,7 +9,7 @@ export default function Home() {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="text-4xl md:text-6xl font-extrabold mb-4 text-[#800020]"
+        className="text-[#750000] text-4xl md:text-6xl font-extrabold mb-4 dark:text-[#4C4CA8]"
       >
         Welcome to Blog Showcase
       </motion.h1>
@@ -17,12 +17,12 @@ export default function Home() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="text-lg md:text-2xl text-gray-700 dark:text-gray-200 mb-6"
+        className="text-black text-lg md:text-2xl text-gray-700 dark:text-[#B3AC6D] mb-6"
       >
         <Typewriter
           words={[
-            "A place to discover amazing blogs and projects.",
-            "Built with Next.js, TailwindCSS, and ❤️.",
+            "A place to discover amazing blogs",
+            "Built with Next.js and TailwindCSS",
             "Start exploring now!"
           ]}
           loop={0}
