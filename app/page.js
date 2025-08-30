@@ -21,9 +21,9 @@ export default function Home() {
       >
         <Typewriter
           words={[
-            "A place to discover amazing blogs",
-            "Built with Next.js and TailwindCSS",
-            "Start exploring now!"
+            "Big ideas in small, digestible blogs",
+            "Web, AI, and databases — without the jargon",
+            "Level up your dev skills, post by post"
           ]}
           loop={0}
           cursor

@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Blog Showcase",
-  description: "A blog/project showcase app",
+  description: "A blog showcase website",
 };
 
 export default function RootLayout({ children }) {

@@ -15,7 +15,7 @@ export default function SearchBar({ onSearch }) {
       placeholder="Search blogs..."
       value={query}
       onChange={handleChange}
-      className="w-full md:w-1/2 p-2 mb-6 border rounded shadow"
+      className="w-full md:w-1/2 p-2 mb-6 border rounded shadow bg-white dark:bg-black"
     />
   );
 }

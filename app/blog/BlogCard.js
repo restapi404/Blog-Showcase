@@ -28,7 +28,7 @@ export default function BlogCard({ blog }) {
         By {blog.author} • {blog.date}
       </div>
       <Link
-        href={'/blog/${blog.id}'}
+        href={`/blog/${blog.id}`}
         className="mt-auto text-blue-600 dark:text-blue-400 hover:underline hover:text-blue-800 dark:hover:text-blue-200 transition"
       >
         Read More
